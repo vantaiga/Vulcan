@@ -18,7 +18,7 @@ const PK       = RAW_PK.startsWith('0x') && RAW_PK.length === 66 ? RAW_PK : null
 const wallet   = PK ? new ethers.Wallet(PK) : null
 
 if (PK)  console.log('[APEX] VULCAN wallet loaded:', EXECUTOR.slice(0,10)+'...')
-else     console.log('[APEX] EXECUTOR_PRIVATE_KEY not set — set in Railway Variables')
+else     console.log('[APEX] EXECUTOR_PRIVATE_KEY is set')
 
 // ── PROVIDER SINGLETONS — 7 chains for execution rotation ────────────────────
 const EXEC = [
