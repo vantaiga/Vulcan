@@ -16,7 +16,6 @@ const { WebSocketServer } = _req(path.join(__dir, '../node_modules/ws'))
 
 import { getExecutions, exportSnapshot, recordTransfer,
          getTreasuryHistory }       from './db.js'
-import { getQueueSize }             from './overlay.js'
 import { CHAINS, TOTAL_FLASH, TOTAL_CYCLES,
          getPropellerTarget, EXECUTOR, TREASURY } from './config.js'
 
